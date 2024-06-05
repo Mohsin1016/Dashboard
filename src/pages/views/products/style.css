@@ -1,0 +1,50 @@
+.tabs-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.tabs {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs:hover::-webkit-scrollbar {
+    /* overflow: scroll; */
+    display: block;
+    width: 6px;
+
+}
+
+.tabs:hover::-webkit-scrollbar-thumb {
+    /* overflow: scroll; */
+    background-color: gray;
+    border-radius: 50px;
+}
+
+/* .ant-table table {
+    width: 97rem !important;
+    overflow-y: auto;
+}
+
+.table::-webkit-scrollbar {
+    display: none;
+}
+
+.table:hover::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+
+}
+
+.table:hover::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 50px;
+} */

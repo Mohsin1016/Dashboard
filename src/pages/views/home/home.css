@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+.home-layout {
+    overflow: auto;
+    padding: 1rem;
+}
+
+
+.home-layout::-webkit-scrollbar {
+    display: none;
+}
+
+.home-layout:hover::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+
+}
+
+.home-layout:hover::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 50px;
+}
+
+.top-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.bottom-cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .top-cards-container,
+    .bottom-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
